@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import { lightTheme } from "../../../../../../styles/Theme";
-import { DropDownContainer } from "../style";
 
 
 export const NavMenu = styled.nav`

@@ -2,7 +2,7 @@ import { useState } from "react"
 import {ArrowContainer, ArrowIcon, DropDownContainer, DropDownLabel, NavMenu, NavMenuItem} from "./style"
 import { navLinkData } from "../navLinkData"
 import { Fragment } from "react"
-import DropDown from "../../dropDown/DropDown"
+import DropDown from "./dropDown/DropDown"
 
 const Mobile = () => {
     const [openDropDown, setOpenDropDown] = useState(null)

@@ -3,7 +3,6 @@ import { useState } from "react";
 import {Wrapper,MenuIcon, NavContainer,MobileView,Left,Center,Right, MobileLinks, CloseMenu,} from "./Style"
 import {NavBtn} from "../../call-to-Action/Buttons"
 import Logo from "./layout/logo/Logo";
-import NavLinks from "./layout/navLinks/NavLinks";
 import DeskTopLinks from "./layout/navLinks/deskTop/DeskTopLinks";
 import Mobile from "./layout/navLinks/mobileLinks/Mobile";
 

@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import { b } from "../../../../../styles/Responsive";
-import { lightTheme } from "../../../../../styles/Theme";
+import { b } from "../../../../../../../styles/Responsive";
+import { lightTheme } from "../../../../../../../styles/Theme";
 
 export const DropdownContainer = styled.div`
 background: ${lightTheme.bg};

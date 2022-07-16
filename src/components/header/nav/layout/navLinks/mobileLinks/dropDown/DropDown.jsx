@@ -1,6 +1,6 @@
 import { Fragment } from 'react'
 import {useState} from 'react'
-import { ArrowContainer, ArrowIcon, DropDownContainer, DropDownLabel, NavMenuItem } from '../navLinks/mobileLinks/style'
+import { ArrowContainer, ArrowIcon, DropDownContainer, DropDownLabel, NavMenuItem } from "../style"
 import { DropdownContainer, TreeChildCont, TreeItemCont } from './style'
 
 
