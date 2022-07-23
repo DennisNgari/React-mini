@@ -16,6 +16,8 @@ const iconProps = css`
     cursor:pointer;
     font-size: 30px;
     justify-content: space-between;
+    position:fixed;
+    right:10px;
 };
 `
 
@@ -108,6 +110,7 @@ display: none;
         }; 
         z-index: 999;
         transform:  ${props=> (props.navbarState !== "showMenu")&& "translateX(100%)"};
+        opacity: 1;
   }
   
 `

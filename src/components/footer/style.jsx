@@ -90,7 +90,7 @@ export const LinkedIn = styled(AiFillLinkedin)``
 export const MiddleSection = styled(Section)`
  position: relative;
 width: 25%;
-@media ${b.md}{
+@media ${b.lg}{
     display:none;
 }
 `

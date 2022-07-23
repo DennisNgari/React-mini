@@ -11,7 +11,6 @@ height: 100%;
 `
 
 export const NavMenuList = styled.ul`
-
 list-style: none;
 cursor: pointer;
 color: ${lightTheme.primary2};

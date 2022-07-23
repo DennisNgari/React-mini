@@ -15,7 +15,24 @@ export const GlobalStyles = createGlobalStyle`
         background:linear-gradient(0.25turn, ${lightTheme.bg}, ${lightTheme.bg2}) ;
         font-family: 'Roboto', sans-serif;
         letter-spacing: .6px;
-    }
+        /* width */
+        ::-webkit-scrollbar {
+        width: 10px;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 5px grey;
+        border-radius: 10px;
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+        background: ${lightTheme.hover};
+        border-radius: 10px;
+        }
+        }; 
+    
 
     nav{
     font-family: 'Exo 2', sans-serif;

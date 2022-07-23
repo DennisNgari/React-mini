@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { b } from "../../styles/Responsive";
 
 export const PageNotFoundContainer = styled.div`
     background-color: #fff;
@@ -8,6 +9,9 @@ export const PageNotFoundContainer = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    @media ${b.lg}{
+        height:40vh;
+    }
 `
 export const Image = styled.img`
         width: 60%;
@@ -16,6 +20,9 @@ export const Image = styled.img`
 `
 
 export const Text = styled.h2`
-   color: #4E32A8;
+        color: #4E32A8;
         font-weight: bold;
+        @media ${b.lg}{
+        font-size: 14px;
+    }
 `
