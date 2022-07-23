@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import {Wrapper,MenuIcon, NavContainer,MobileView,Left,Center,Right, MobileLinks, CloseMenu,} from "./Style"
+import {Wrapper,MenuIcon, NavContainer,Left,Center,Right, MobileLinks, CloseMenu, MobileHamburgerContainer,} from "./Style"
 import {NavBtn} from "../../call-to-Action/Buttons"
 import Logo from "./layout/logo/Logo";
 import DeskTopLinks from "./layout/navLinks/deskTop/DeskTopLinks";
@@ -43,9 +43,9 @@ const user = true;
                 </Right>
 
                 {/* Mobile View Hamburger */}
-                <MobileView onClick={handleClick}>
+                <MobileHamburgerContainer onClick={handleClick}>
                 {navbarOpen ? <CloseMenu /> : <MenuIcon />}
-                </MobileView>
+                </MobileHamburgerContainer>
 
             </Wrapper>
         </NavContainer>

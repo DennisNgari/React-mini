@@ -11,6 +11,7 @@ height: 100%;
 `
 
 export const NavMenuList = styled.ul`
+
 list-style: none;
 cursor: pointer;
 color: ${lightTheme.primary2};
@@ -24,12 +25,13 @@ font-weight: bold;
 `
 
 export const DropMenu = styled.ul`
+z-index: 999;
 background: ${lightTheme.primary};
 opacity: 0;
 visibility: hidden;
 min-width: 150px;
 line-height: 45px;
-top: 10vh;
+top: 12vh;
 position: absolute;
 display: flex;
 align-items: center;
@@ -38,12 +40,13 @@ padding: 10px;
 overflow: hidden;
 margin: auto;
 border-radius: 5px;
-transition: all .3s ease; 
+transition: all .5s ease;
 `
 export const DropMenuItem = styled.li`
 list-style: none;
 color:${lightTheme.bg2};
 font-size: 17px;
+ 
 :hover{
     color:#ffff;
     text-decoration: underline;
@@ -59,24 +62,27 @@ height: 100%;
 `
 // Mega Menu
 export const MegaBox = styled.div`
-position: sticky;
+z-index: 999;
+position: absolute;
 padding: 0 20px;
-top: 10vh;
 background: ${lightTheme.primary};
 width: 100%;
 left: 0;
-position: absolute;
+top: 12vh;
 visibility: hidden;
 transition: all .3s ease; 
+
 `
 
 
 export const MegaContent = styled.div`
 display: flex;
 width: 100%;
+top: 20vh;
 flex-wrap: wrap;
 align-items: center;
-    justify-content: space-between;
+justify-content: space-between;
+
 `
 export const MegaRow = styled.div`
     line-height: 45px;
@@ -89,11 +95,14 @@ export const MegaHeader = styled.span`
 export const MegaMenu = styled.ul`
 list-style: none;
 padding-left: 15px;
+padding: 15px;
+
 `
 export const MegaMenuListItem = styled.li`
 padding: 0 20px;
 color: #ffff;
 font-weight: normal;
+border-left: 1px solid ${lightTheme.overlay};
 :hover{
     text-decoration: underline;
 }

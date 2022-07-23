@@ -13,7 +13,7 @@ export const NavMenu = styled.ul`
 list-style: none;
 width: 100%;
 justify-content: space-between;
-@media ${b.md}{
+@media ${b.lg}{
 border-bottom: 2px solid ${lightTheme.overlay};
 :last-of-type{
 margin-bottom: 20px;
@@ -41,7 +41,7 @@ export const DropDownContainer = styled.div`
     align-items: center;
     justify-content: space-between;
     cursor: pointer;
-    @media ${b.md}{
+    @media ${b.lg}{
     display: flex;
     align-items: center;
     justify-content: space-between;

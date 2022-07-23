@@ -11,7 +11,7 @@ const iconProps = css`
   display: none;
   color: ${lightTheme.primary2};
   z-index: 1000;
-  @media ${b.md}{
+  @media ${b.lg}{
     display: block;
     cursor:pointer;
     font-size: 30px;
@@ -32,8 +32,8 @@ ${iconProps}
 
 //Nav Layout.
 export const NavContainer = styled.div`
-border-bottom: 1px solid #585656;
-  width: 100vw;
+border-bottom: 1px solid ${lightTheme.overlay};
+  width: 100%;
   height: 10vh;
   line-height: 65px;
 `;
@@ -45,7 +45,7 @@ export const Wrapper = styled.nav`
     margin: auto;
     align-items: center;
     justify-content: center;
-    @media ${b.md}{
+    @media ${b.lg}{
     display: flex;
     padding: 10px;
     max-width: 100%;
@@ -63,7 +63,7 @@ justify-content: center;
 export const Center = styled.nav`
 width: 80%;
 height: 100%;
-@media ${b.md}{
+@media ${b.lg}{
     display: none;
 };
 `
@@ -73,34 +73,22 @@ height: 100%;
 display: flex;
 align-items: center;
 justify-content: center;
-@media ${b.md}{
+@media ${b.lg}{
     display: none;
-};@media ${b.xl}{
+};
+@media ${b.xl}{
     width: 15%;
 };
 `
-export const MobileView = styled.div`
+export const MobileHamburgerContainer = styled.div`
 height:100%;
-display: flex;justify-content: center;
+display: flex;
+justify-content: center;
 align-items: center;
 `
 export const MobileLinks = styled.div`
-position: fixed;
-top: 10vh;
-height: 100%;
-background: green;
-width: 100%;
-max-width: 350px;
-right: 0;
-padding: 10px;
-transition: 0.3s ease left;
 display: none;
-@media ${b.md}{
-    /* transform:  ${props=> (props.navbarState !== "showMenu")&& "translateX(100%)"};
-    transform:  ${props=> (props.navbarState === "showMenu")&& "translateX(0%)"};  */
-    /* display: block; */
-};
-@media ${b.md}{
+@media ${b.lg}{
         position: fixed;
         height: 100%;
         width: 100%;
@@ -118,8 +106,8 @@ display: none;
         &::-webkit-scrollbar{
             width: 0;
         }; 
-    transform:  ${props=> (props.navbarState !== "showMenu")&& "translateX(100%)"};
-
+        z-index: 999;
+        transform:  ${props=> (props.navbarState !== "showMenu")&& "translateX(100%)"};
   }
   
 `

@@ -39,6 +39,7 @@ export const s = {
 export const b = {
   xxl: `(max-width: ${s.xxl})`,
   xl: `(max-width: ${s.xl})`,
+  lg: `(max-width: ${s.lg})`,
   md: `(max-width: ${s.md})`,
   sm: `(max-width: ${s.sm})`,
 };
