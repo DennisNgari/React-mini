@@ -2,6 +2,17 @@ import styled from "styled-components";
 import { lightTheme } from "../../styles/Theme";
 import loginSVG from "../../assets/img/login.svg"
 import { b } from "../../styles/Responsive";
+import {BiHide} from "react-icons/bi"
+import {BiShow} from "react-icons/bi"
+
+export const Show = styled(BiShow)``
+export const Hide = styled(BiHide)``
+export const PasswordShowHideCont = styled.div`
+position: absolute;
+right: 10px;
+bottom: 10px;
+cursor: pointer;
+`
 
 export const LoginContainer = styled.div`
     background: var(--color-secondary-light-3);
@@ -12,8 +23,6 @@ export const LoginContainer = styled.div`
     justify-content: center;
     align-items: center;
     position: relative;
-    @media ${b.lg}{
-}
 `
 export const LoginWrapper = styled.div`
     display: grid;
@@ -26,7 +35,7 @@ export const LoginWrapper = styled.div`
 background: #f0f0f0;
 box-shadow:  7px 7px 9px #b6b6b6,
              -7px -7px 9px #ffffff;
-             @media ${b.lg}{
+             @media ${b.md}{
                 height: 80vh;
         width: 90%;
        display: flex;
@@ -48,7 +57,7 @@ export const ContentLeft = styled.div`
 background-size: cover;
 background-position: center;
 padding: 10px;
-@media ${b.lg}{
+@media ${b.md}{
     display: none;
 }
 `
@@ -67,7 +76,7 @@ export const ContentRight = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    @media ${b.lg}{
+    @media ${b.md}{
        height: 100%;
        width: 100%;
 

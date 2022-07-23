@@ -1,5 +1,8 @@
+import { useState } from 'react'
 import { NavBtn } from '../../components/call-to-Action/Buttons'
 import { 
+    Show,
+    Hide,
     ContentLeft,
     ContentRight,
     Form,
@@ -14,12 +17,15 @@ import {
     RememberInput,
     RemLabel,
     SignInBtn,
-    TextBox 
+    TextBox, 
+    PasswordShowHideCont
     } from './style'
 
 
 
 const Login = () => {
+    const [showPassword, setshowPassword] = useState(false)
+    const toogleIcon =()=>{setshowPassword(!showPassword)}
     return (
         <LoginContainer>
             <LoginWrapper>
@@ -46,8 +52,11 @@ const Login = () => {
                 </LoginForm>
 
                 <LoginForm>
+                    <PasswordShowHideCont onClick = {toogleIcon}>
+                    {showPassword ? (<Hide/>) : (<Show/>)}
+                    </PasswordShowHideCont>
                     <LoginInput
-                    type="password"
+                    type={ `${showPassword ? "text":"password"}`}
                     name="password"
                     autocomplete="off"
                     required
