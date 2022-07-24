@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { NavBtn } from '../../components/call-to-Action/Buttons'
+import {SignInBtn} from '../../components/call-to-Action/Buttons'
 import { 
     Show,
     Hide,
@@ -16,9 +16,12 @@ import {
     RememberContainer,
     RememberInput,
     RemLabel,
-    SignInBtn,
     TextBox, 
-    PasswordShowHideCont
+    SignInBtnBox,
+    PasswordShowHideCont,
+    LoginOptionCont,
+    GoogleIcon,
+    AccessText
     } from './style'
 
 
@@ -37,11 +40,25 @@ const Login = () => {
                 {/* Right */}
                 <ContentRight>
                     <LoginText> Sign In</LoginText>
+                    {/* Social SignIn */}
+                <LoginOptionCont>
+                    <GoogleIcon/>
+                    <AccessText>Sign In with Google</AccessText>
+                </LoginOptionCont>
+                {/* <LoginOptionCont>
+                    <GoogleIcon/>
+                    <AccessText>Sign In with Google</AccessText>
+                </LoginOptionCont>
+                <LoginOptionCont>
+                    <GoogleIcon/>
+                    <AccessText>Sign In with Google</AccessText>
+                </LoginOptionCont> */}
 
+                {/* Login Form */}
                 <Form>
                 <LoginForm>
                     <LoginInput
-                    type="email"
+                type="email"
                     name="email"
                     autocomplete="off"
                     required
@@ -72,9 +89,9 @@ const Login = () => {
                     <RemLabel htmlFor="rememberMe"> Remember Me</RemLabel>
                 </RememberContainer>
                 
-                <SignInBtn>
-                    <NavBtn>Sign In</NavBtn>
-                </SignInBtn>
+                <SignInBtnBox>
+                    <SignInBtn>Sign In</SignInBtn>
+                </SignInBtnBox>
                 </Form>
 
                 </ContentRight>

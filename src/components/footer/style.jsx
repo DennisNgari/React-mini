@@ -38,6 +38,9 @@ export const Section = styled.div`
     margin-bottom: 15px;
     @media ${b.lg}{
         width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 `
 export const LeftSection = styled(Section)`
@@ -149,6 +152,9 @@ export const CopyRight = styled.div`
     padding: 8px 100px;
     text-align: center;
     color: #999;
+    @media ${b.md}{
+    display:none;
+}
 `
 
 

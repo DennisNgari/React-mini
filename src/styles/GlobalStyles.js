@@ -2,7 +2,7 @@ import { createGlobalStyle } from "styled-components";
 import { lightTheme } from "./Theme";
 
 export const GlobalStyles = createGlobalStyle`
-@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300;500&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300;500&display=swap'); */
 
     *,
     *::after,

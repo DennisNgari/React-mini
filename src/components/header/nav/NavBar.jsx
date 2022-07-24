@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 import {Wrapper,MenuIcon, NavContainer,Left,Center,Right, MobileLinks, CloseMenu, MobileHamburgerContainer,} from "./Style"
-import {NavBtn} from "../../call-to-Action/Buttons"
+import {SignInBtn, SignUpBtn} from "../../call-to-Action/Buttons"
 import Logo from "./layout/logo/Logo";
 import DeskTopLinks from "./layout/navLinks/deskTop/DeskTopLinks";
 import Mobile from "./layout/navLinks/mobileLinks/Mobile";
@@ -22,7 +22,7 @@ const NavBar = () => {
   //* End of hamburger Menu.
   //*******************//
 
-const user = true;
+const user = false;
     return (
         <>
         <NavContainer >
@@ -39,7 +39,7 @@ const user = true;
 
                 {/* Right Section */}
                 <Right>
-                {user ? (<NavBtn>Log Out</NavBtn>):(<NavBtn>Sign Up</NavBtn>)}
+                {user ? (<SignInBtn>Log Out</SignInBtn>):(<><SignInBtn>Sign In</SignInBtn><SignUpBtn>Sign Up</SignUpBtn></>)}
                 </Right>
 
                 {/* Mobile View Hamburger */}
@@ -53,7 +53,7 @@ const user = true;
         
         <MobileLinks navbarState = {`${navbarOpen ? "showMenu":""}`}>
             <Mobile/>
-            {user ? (<NavBtn>Log Out</NavBtn>):(<NavBtn>Sign Up</NavBtn>)}
+            {user ? (<SignInBtn>Log Out</SignInBtn>):(<><SignInBtn>Sign In</SignInBtn><SignUpBtn>Sign Up</SignUpBtn></>)}
         </MobileLinks>
         </>
         

@@ -16,7 +16,6 @@ const iconProps = css`
     cursor:pointer;
     font-size: 30px;
     justify-content: space-between;
-    position:fixed;
     right:10px;
 };
 `
@@ -29,6 +28,7 @@ ${iconProps}
 // Close Menu Icon
 export const CloseMenu = styled(AiOutlineClose)`
 ${iconProps}
+position:fixed;
 `;
 
 
@@ -70,7 +70,7 @@ height: 100%;
 };
 `
 export const Right = styled.div`
-width: 10%;
+width: 20%;
 height: 100%;
 display: flex;
 align-items: center;

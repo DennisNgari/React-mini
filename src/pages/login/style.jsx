@@ -4,9 +4,16 @@ import loginSVG from "../../assets/img/login.svg"
 import { b } from "../../styles/Responsive";
 import {BiHide} from "react-icons/bi"
 import {BiShow} from "react-icons/bi"
+import {FcGoogle} from "react-icons/fc"
 
-export const Show = styled(BiShow)``
-export const Hide = styled(BiHide)``
+export const Show = styled(BiShow)`
+font-size: 20px;
+${lightTheme.primaryLinear}
+`
+export const Hide = styled(BiHide)`
+font-size: 20px;
+${lightTheme.primaryLinear}
+`
 export const PasswordShowHideCont = styled.div`
 position: absolute;
 right: 10px;
@@ -15,7 +22,6 @@ cursor: pointer;
 `
 
 export const LoginContainer = styled.div`
-    background: var(--color-secondary-light-3);
     height: 90vh;
     width: 100%;
     border: 1px solid transparent;
@@ -23,6 +29,10 @@ export const LoginContainer = styled.div`
     justify-content: center;
     align-items: center;
     position: relative;
+    @media ${b.md}{
+                height: 90vh;
+                
+    }
 `
 export const LoginWrapper = styled.div`
     display: grid;
@@ -32,20 +42,20 @@ export const LoginWrapper = styled.div`
     width: 80%;
     overflow: hidden;
     border-radius: 30px;
-background: #f0f0f0;
-box-shadow:  7px 7px 9px #b6b6b6,
-             -7px -7px 9px #ffffff;
+    background: #f0f0f0;
+    box-shadow:  7px 7px 9px #b6b6b6,
+            -7px -7px 9px #ffffff;
              @media ${b.md}{
-                height: 80vh;
-        width: 90%;
-       display: flex;
-       flex-direction: column;
-       margin: 40px 0 0 0;
-       align-items: center;   
-border-radius: 30px;
-background: #f0f0f0;
-box-shadow:  7px 7px 9px #b6b6b6,
-             -7px -7px 9px #ffffff;
+                max-height: 80%;
+                width: 90%;
+                display: flex;
+                flex-direction: column;
+                /* margin: 20px 0 0 0; */
+                align-items: center;   
+                border-radius: 30px;
+                background: #f0f0f0;
+                box-shadow:  7px 7px 9px #b6b6b6,
+                -7px -7px 9px #ffffff;
     }
 `
 
@@ -69,6 +79,29 @@ export const LoginText = styled.h2`
 color: ${lightTheme.primary};
 margin-top: 20px;
 `
+export const LoginOptionCont  = styled.div`
+border: 2px solid ${lightTheme.overlay};
+padding: 0 10px;
+margin-top: 20px;
+min-width: 35%;
+min-height: 50px;
+border-radius: 10px;
+display: flex;
+align-items: center;
+gap: 20px;
+cursor: pointer;
+:hover{
+    border: 2px solid ${lightTheme.hover}; 
+}
+`
+export const GoogleIcon = styled(FcGoogle)`
+font-size: 30px;
+`
+export const AccessText = styled.h4`
+color: ${lightTheme.primary2};
+`
+
+
 
 export const ContentRight = styled.div`
     background: ${lightTheme.bg2};
@@ -87,6 +120,9 @@ export const Form = styled.form`
 & > * {
     margin-top: 30px;
 }
+:last-child{
+        margin-bottom: 20px;
+    }
 `
 export const LoginForm = styled.div`
     display: flex;
@@ -148,4 +184,4 @@ export const RememberInput = styled.input`
 `
 export const RemLabel  = styled.label``
 
-export const SignInBtn = styled.div``
+export const SignInBtnBox = styled.div``
