@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import {SignInBtn} from '../../components/call-to-Action/Buttons'
+import { Hr, OrCont, OrText } from '../register/style'
 import { 
     Show,
     Hide,
@@ -45,15 +46,11 @@ const Login = () => {
                     <GoogleIcon/>
                     <AccessText>Sign In with Google</AccessText>
                 </LoginOptionCont>
-                {/* <LoginOptionCont>
-                    <GoogleIcon/>
-                    <AccessText>Sign In with Google</AccessText>
-                </LoginOptionCont>
-                <LoginOptionCont>
-                    <GoogleIcon/>
-                    <AccessText>Sign In with Google</AccessText>
-                </LoginOptionCont> */}
 
+                {/* Or */}
+                <OrCont style={{minWidth:"35%"}}>
+                    <Hr/><OrText>or</OrText><Hr/>
+                </OrCont>
                 {/* Login Form */}
                 <Form>
                 <LoginForm>

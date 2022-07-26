@@ -1,8 +1,9 @@
 import {useState} from 'react'
 import { SignUpBtn } from '../../components/call-to-Action/Buttons'
 import FormInput from '../../components/formInput/FormInput'
+import { AccessText, GoogleIcon, LoginOptionCont } from '../login/style'
 
-import {Form, RegisterContainer, SignUpText } from './style'
+import {Form, Hr, OrCont, OrText, RegisterContainer, SignUpText, SocialCont } from './style'
 
 const Register = () => {
     const [values, setValues] = useState({
@@ -13,7 +14,6 @@ const Register = () => {
         password:"",
         confirmPassword:"",
     });
-
 
     const handleSubmit =(e)=>{
         e.preventDefault();
@@ -32,15 +32,19 @@ const Register = () => {
         placeholder:"FullName",
         errorMessage:"* Name should be between 3-16 characters and shouldn't contain any special character!",
         label:"fullName",
-        pattern:"^[A-Za-z0-9]{3,16}$",
+        pattern:"^[a-zA-Z]{4,}(?: [a-zA-Z]+)?(?: [a-zA-Z]+)?$",
         required:true,
+        
+        
     },
     {
         id:2,
         name:"birthDay",
         type:"date",
+        errorMessage:"* Date CAN NOT be empty!",
         placeholder:"Birth-Day",
-        label:"BirthDay"
+        label:"BirthDay",
+        required:true,
     },
     {
         id:3,
@@ -77,7 +81,7 @@ const Register = () => {
         name:"confirmPassword",
         type:"password",
         placeholder:"Confirm Password",
-        errorMessage:"* Passwords DONT match!",
+        errorMessage:"* Passwords DO NOT match!",
         label:"ConfirmPassword",
         pattern:values.password,
         required:true,
@@ -89,17 +93,32 @@ const Register = () => {
     return (
    
         <RegisterContainer>
-            <Form onSubmit={handleSubmit}>
-                <SignUpText> Register</SignUpText>
+            <Form onSubmit={handleSubmit} >
+                <SignUpText> Join Expert Professor</SignUpText>
+                            {/* Social SignUp */}
+                            <SocialCont>
+                    <LoginOptionCont style={{maxWidth:"70%", justifyContent:"space-around"}}>
+                        <GoogleIcon/>
+                        <AccessText>Sign Up With Google</AccessText>
+                    </LoginOptionCont>
+                            </SocialCont>
+                    {/* or */}
+                    <OrCont>
+                        <Hr/> <OrText>Or</OrText> <Hr/>
+                    </OrCont>
+
+                    <AccessText style={{marginBottom:"20px"}}>Sign Up With Email</AccessText>
+
                 {InputData.map((input)=>(
                 <FormInput 
+                names={input.label}
                     key={input.id} 
                     {...input} 
                     value={values[input.name]} 
                     onChange={onChange}
+                    
                  />
                 ))}
-
                 <SignUpBtn style={{margin:"15px 0 30px 0", fontSize:"20px"}}>Sign Up</SignUpBtn>
             </Form>
         </RegisterContainer> 

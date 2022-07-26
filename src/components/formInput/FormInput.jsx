@@ -1,24 +1,27 @@
 import {useState} from 'react'
-import { ErrorText, FormInputWrapper, FormLabel, RegisterInput } from './style'
+import { Checked, ErrorText, FormInputWrapper, FormLabel, RegisterInput } from './style'
 
 const FormInput = (props) => {
     // When the user clicks outside the input, validate  their entries.
-    const [focused, setFocused] = useState(false)
+    // const [focused, setFocused] = useState(false)
+    const [list, setList] = useState(false)
     const handleFocus =(e)=>{
-        setFocused(true);
+        setList(true);
     }
 
     // Destructure the Props.
     const {label,errorMessage,onChange, id, ...inputProps} = props;
 
     return (
-        <FormInputWrapper>
+        <FormInputWrapper >
             <FormLabel>{label}</FormLabel>
-            <RegisterInput {...inputProps} 
+            <RegisterInput {...inputProps}
             onChange={onChange} 
             onBlur={handleFocus} 
-            focused={focused.toString()}
+            list= {list.toString()}
+            onFocus = {()=> inputProps.name === "confirmPassword" && setList(true)}
             />
+            <Checked/>
             <ErrorText>{errorMessage}</ErrorText>
         </FormInputWrapper>
     )

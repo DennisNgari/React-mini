@@ -2,7 +2,7 @@ import { createGlobalStyle } from "styled-components";
 import { lightTheme } from "./Theme";
 
 export const GlobalStyles = createGlobalStyle`
-/* @import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300;500&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300;500&display=swap');
 
     *,
     *::after,
@@ -15,17 +15,11 @@ export const GlobalStyles = createGlobalStyle`
         background:linear-gradient(0.25turn, ${lightTheme.bg}, ${lightTheme.bg2}) ;
         font-family: 'Roboto', sans-serif;
         letter-spacing: .6px;
+        overflow: overlay;
         /* width */
         ::-webkit-scrollbar {
-        width: 10px;
+        width: 8px;
         }
-
-        /* Track */
-        ::-webkit-scrollbar-track {
-        box-shadow: inset 0 0 5px grey;
-        border-radius: 10px;
-        }
-
         /* Handle */
         ::-webkit-scrollbar-thumb {
         background: ${lightTheme.hover};

@@ -99,6 +99,7 @@ font-size: 30px;
 `
 export const AccessText = styled.h4`
 color: ${lightTheme.primary2};
+align-items: center;
 `
 
 

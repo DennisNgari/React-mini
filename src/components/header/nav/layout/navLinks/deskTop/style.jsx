@@ -12,7 +12,6 @@ height: 100%;
 
 export const NavMenuList = styled.ul`
 list-style: none;
-cursor: pointer;
 color: ${lightTheme.primary2};
 font-size: 20px;
 display: flex;
@@ -20,7 +19,6 @@ align-items: center;
 justify-content:space-around;
 width: 100%; 
 font-weight: bold;
-
 `
 
 export const DropMenu = styled.ul`
@@ -35,9 +33,9 @@ position: absolute;
 display: flex;
 align-items: center;
 flex-direction: column;
-padding: 10px;
 overflow: hidden;
 margin: auto;
+text-align: center;
 border-radius: 5px;
 transition: all .5s ease;
 `
@@ -45,6 +43,10 @@ export const DropMenuItem = styled.li`
 list-style: none;
 color:${lightTheme.bg2};
 font-size: 17px;
+width: 100%;
+:not(:last-child){
+    border-bottom: 1px solid gray;
+}
  
 :hover{
     color:#ffff;
@@ -111,10 +113,12 @@ export const MegaMenuItemLink = styled.a``
 
 export const NavMenuItem = styled.li`
 padding: 10px;
+cursor: pointer;
 color: inherit;
+border-bottom: 8px solid transparent;
 :hover{
-    text-decoration: underline;
    color:#595ab4;
+   border-bottom: 8px solid red;
 }
 &:hover  ${DropMenu}{
     top: 10vh;
