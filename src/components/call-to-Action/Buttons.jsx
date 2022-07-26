@@ -31,9 +31,10 @@ ${btnReset};
 ${accessBtns};
 background:${lightTheme.buttonSignIn};
 color: ${lightTheme.primary};
+
 :hover{
     background: ${lightTheme.buttonSignInHover};
-    color: ${lightTheme.bg2};
+    color: ${lightTheme.hover};
 }
 `
 

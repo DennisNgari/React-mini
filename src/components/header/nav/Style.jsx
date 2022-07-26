@@ -3,6 +3,7 @@ import {b} from "../../../styles/Responsive"
 import {FaBars} from "react-icons/fa";
 import {AiOutlineClose} from "react-icons/ai";
 import { lightTheme } from "../../../styles/Theme";
+import { NavLink as Link } from "react-router-dom";
 
 
 
@@ -104,7 +105,7 @@ display: none;
         padding: 50px 10px;
         box-shadow: 0 15px 15px rgba(0,0,0,.15);
         transform:  ${props=> (props.navbarState === "showMenu")&& "translateX(0%)"}; 
-        transition: .2s ease;
+        transition: .15s ease-in;
         &::-webkit-scrollbar{
             width: 0;
         }; 
@@ -112,5 +113,6 @@ display: none;
         transform:  ${props=> (props.navbarState !== "showMenu")&& "translateX(100%)"};
         opacity: 1;
   }
-  
 `
+
+export const NavLink = styled(Link)``

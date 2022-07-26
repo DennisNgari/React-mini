@@ -1,5 +1,5 @@
 export const lightTheme = {
-  buttonSignIn: "rgb(90,207,115)",
+  buttonSignIn: "rgb(81,168,15)",
   buttonSignInHover: "#5ecf5a",
   text: "rgb(20, 20, 20)",
   text2: "rgb(55, 55, 55)",

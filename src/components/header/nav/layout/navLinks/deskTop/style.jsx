@@ -1,5 +1,10 @@
-import styled from "styled-components";
+import styled,{css} from "styled-components";
 import { lightTheme } from "../../../../../../styles/Theme";
+import {IoIosSchool} from "react-icons/io"
+import {FcServices} from "react-icons/fc"
+import {AiOutlineBarChart} from "react-icons/ai"
+import {GiPriceTag} from "react-icons/gi"
+import {GoLaw} from "react-icons/go"
 
 
 export const NavMenu = styled.nav`
@@ -130,4 +135,35 @@ border-bottom: 8px solid transparent;
     opacity: 1;
     visibility: visible;
     }
+`
+
+// Icons
+export const iconProps = css`
+font-size: 30px;
+color: ${lightTheme.bg};
+`
+export const IconCont = styled.div`
+display: flex;
+align-items: center;
+gap: 10px;
+`
+export const ProductIcon = styled(IoIosSchool)`
+${iconProps}
+`
+export const ServiceIcon = styled(FcServices)`
+${iconProps};
+` 
+export const FinanceIcon = styled(AiOutlineBarChart)`
+${iconProps};
+color: ${lightTheme.buttonSignIn};
+`
+export const PriceIcon = styled(GiPriceTag)`
+${iconProps};
+color: ${lightTheme.buttonSignInHover};
+
+`
+export const LegalIcon = styled(GoLaw)`
+${iconProps};
+color: ${lightTheme.bg2};
+
 `

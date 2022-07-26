@@ -176,13 +176,17 @@ export const LoginInput= styled.input`
     };
 `;
 
-export const RememberContainer = styled.div`
+export const ForgotPassContainer = styled.div`
  margin: 20px 0px 20px 0;
 `
-export const RememberInput = styled.input`
-    margin-right: 10px;
-    transform : scale(1.5);
+export const ForgotLabel  = styled.span`
+color: ${lightTheme.SignInBtnBox};
+cursor: pointer;
+text-decoration: underline;
+:hover{
+    text-decoration: underline;
+color: ${lightTheme.primary};
+}
 `
-export const RemLabel  = styled.label``
 
 export const SignInBtnBox = styled.div``

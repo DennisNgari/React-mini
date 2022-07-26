@@ -3,6 +3,8 @@ import {lightTheme} from "../../styles/Theme"
 import loginSVG from "../../assets/img/login.svg"
 import { b } from "../../styles/Responsive";
 
+
+
 export const RegisterContainer = styled.div`
 height: 90vh;
 width: 100%;
@@ -15,6 +17,10 @@ background-image: linear-gradient(to right,
        url(${loginSVG});
 background-size: cover;
 background-position:center;
+@media ${b.md}{
+       height: auto;
+       overflow: hidden;
+}
 `
 
 export const Form = styled.form`

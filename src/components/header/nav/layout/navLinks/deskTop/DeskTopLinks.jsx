@@ -1,4 +1,4 @@
-import {DropMenuItem,DropMenu, NavMenu, NavMenuItem,NavMenuItemLink,NavMenuList, MegaBox, MegaContent, MegaRow, MegaHeader, MegaMenu, MegaMenuListItem, MegaMenuItemLink} from "./style"
+import {DropMenuItem,DropMenu, NavMenu, NavMenuItem,NavMenuItemLink,NavMenuList, MegaBox, MegaContent, MegaRow, MegaHeader, MegaMenu, MegaMenuListItem, MegaMenuItemLink, ProductIcon, ServiceIcon, IconCont, FinanceIcon, PriceIcon, LegalIcon} from "./style"
 import { Products, Services, Finance, Legal, Pricing } from "../navLinkData"
 
 const DeskTopLinks = () => {
@@ -15,6 +15,12 @@ const DeskTopLinks = () => {
                 <NavMenuItem dropDown>
                     <NavMenuItemLink >About</NavMenuItemLink>
                 <DropMenu>
+                <DropMenuItem>
+                        <NavMenuItemLink>
+                            About Us
+                        </NavMenuItemLink>
+                    </DropMenuItem>
+
                     <DropMenuItem>
                         <NavMenuItemLink>
                             Mission
@@ -27,11 +33,6 @@ const DeskTopLinks = () => {
                         </NavMenuItemLink>
                     </DropMenuItem>
 
-                    <DropMenuItem>
-                        <NavMenuItemLink>
-                            FAQ
-                        </NavMenuItemLink>
-                    </DropMenuItem>
                 </DropMenu>
                 </NavMenuItem>
                 {/* End of Drop Menu */}
@@ -43,7 +44,7 @@ const DeskTopLinks = () => {
                         <MegaContent>
                             {/* Row 1 */}
                             <MegaRow>
-                                <MegaHeader>Products</MegaHeader>
+                                <IconCont><ProductIcon/><MegaHeader>Products</MegaHeader></IconCont>
                                 <MegaMenu>
                                     {Products.map((p)=>(
                                         <MegaMenuListItem key = {p.key}>
@@ -55,7 +56,7 @@ const DeskTopLinks = () => {
                                 
                                 {/* Row 2 */}
                             <MegaRow>
-                                <MegaHeader>Services</MegaHeader>
+                            <IconCont><ServiceIcon/><MegaHeader>Services</MegaHeader></IconCont>
                                 <MegaMenu>
                                     {Services.map((p)=>(
                                         
@@ -68,7 +69,7 @@ const DeskTopLinks = () => {
 
                             {/* Row 3 */}
                             <MegaRow>
-                                <MegaHeader>Finance</MegaHeader>
+                            <IconCont><FinanceIcon/><MegaHeader>Finance</MegaHeader></IconCont>
                                 <MegaMenu>
                                     {Finance.map((p)=>(
                                         <MegaMenuListItem key = {p.key}>
@@ -80,7 +81,8 @@ const DeskTopLinks = () => {
 
                                {/* Row 3 */}
                                <MegaRow>
-                                <MegaHeader>Legal</MegaHeader>
+                               <IconCont><LegalIcon/><MegaHeader>Legal</MegaHeader></IconCont>
+
                                 <MegaMenu>
                                     {Legal.map((p)=>(
                                         <MegaMenuListItem key = {p.key}>
@@ -92,7 +94,7 @@ const DeskTopLinks = () => {
 
                              {/* Row 3 */}
                              <MegaRow>
-                                <MegaHeader>Pricing</MegaHeader>
+                            <IconCont><PriceIcon/><MegaHeader>Pricing</MegaHeader></IconCont>
                                 <MegaMenu>
                                     {Pricing.map((p)=>(
                                         <MegaMenuListItem key = {p.key}>
@@ -115,7 +117,7 @@ const DeskTopLinks = () => {
                 </NavMenuItem>
 
                 <NavMenuItem>
-                    <NavMenuItemLink>Blog</NavMenuItemLink>
+                    <NavMenuItemLink href="https://projectprofessor.herokuapp.com/">Blog</NavMenuItemLink>
                 </NavMenuItem>
 
 

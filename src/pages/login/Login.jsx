@@ -14,9 +14,8 @@ import {
     LoginLabelName,
     LoginText,
     LoginWrapper,
-    RememberContainer,
-    RememberInput,
-    RemLabel,
+    ForgotPassContainer,
+    ForgotLabel,
     TextBox, 
     SignInBtnBox,
     PasswordShowHideCont,
@@ -81,10 +80,9 @@ const Login = () => {
                 </LoginForm>
 
                 {/* Remember Me */}
-                <RememberContainer>
-                    <RememberInput type="checkbox"/>
-                    <RemLabel htmlFor="rememberMe"> Remember Me</RemLabel>
-                </RememberContainer>
+                <ForgotPassContainer>
+                    <ForgotLabel> Forgot Password?</ForgotLabel>
+                </ForgotPassContainer>
                 
                 <SignInBtnBox>
                     <SignInBtn>Sign In</SignInBtn>
