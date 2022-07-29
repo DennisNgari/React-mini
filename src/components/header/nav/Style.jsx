@@ -17,7 +17,7 @@ const iconProps = css`
     cursor:pointer;
     font-size: 3rem;
     justify-content: space-between;
-    right:10px;
+    right:1rem;
 };
 `
 
@@ -35,10 +35,10 @@ position:fixed;
 
 //Nav Layout.
 export const NavContainer = styled.div`
-border-bottom: 1px solid ${lightTheme.overlay};
+border-bottom: .1rem solid ${lightTheme.overlay};
   width: 100%;
   height: 10vh;
-  line-height: 65px;
+  line-height: 6.5rem;
 `;
 
 export const Wrapper = styled.nav`
@@ -50,7 +50,7 @@ export const Wrapper = styled.nav`
     justify-content: center;
     @media ${b.lg}{
     display: flex;
-    padding: 10px;
+    padding: 1rem;
     max-width: 100%;
     justify-content: space-between;
 };
@@ -95,14 +95,14 @@ display: none;
         position: fixed;
         height: 100%;
         width: 100%;
-        max-width: 350px;
+        max-width: 35rem;
         background: ${lightTheme.bg2};
         display: inline-block;
         top: 0;
         right: 0;
         overflow-y: auto;
-        line-height: 50px;
-        padding: 50px 10px;
+        line-height: 5rem;
+        padding: 5rem 1rem;
         box-shadow: 0 15px 15px rgba(0,0,0,.15);
         transform:  ${props=> (props.navbarState === "showMenu")&& "translateX(0%)"}; 
         transition: .15s ease-in;

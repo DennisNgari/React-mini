@@ -16,10 +16,10 @@ const btnReset = css`
 const accessBtns = css`
 width: 100%;
 display: inline-block;
-padding: 10px;
+padding: .8rem .5rem;
 font-size: 1.6rem;
 font-weight: bold;
-border-radius: 5px;
+border-radius: .5rem;
 border: 2px solid ${lightTheme.bg2};
 -webkit-transition: all 0.3s;
 -moz-transition: all 0.3s;

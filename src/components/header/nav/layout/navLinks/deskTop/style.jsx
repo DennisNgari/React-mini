@@ -32,7 +32,7 @@ background: ${lightTheme.primary};
 opacity: 0;
 visibility: hidden;
 min-width: 150px;
-line-height: 45px;
+line-height: 4.5rem;
 top: 12vh;
 position: absolute;
 display: flex;
@@ -41,7 +41,7 @@ flex-direction: column;
 overflow: hidden;
 margin: auto;
 text-align: center;
-border-radius: 5px;
+border-radius: .5rem;
 transition: all .5s ease;
 `
 export const DropMenuItem = styled.li`
@@ -50,7 +50,7 @@ color:${lightTheme.bg2};
 font-size: 1.7rem;
 width: 100%;
 :not(:last-child){
-    border-bottom: 1px solid gray;
+    border-bottom: .1rem solid gray;
 }
  
 :hover{
@@ -70,7 +70,7 @@ height: 100%;
 export const MegaBox = styled.div`
 z-index: 999;
 position: absolute;
-padding: 0 20px;
+padding: 0rem 2rem;
 background: ${lightTheme.primary};
 width: 100%;
 left: 0;
@@ -91,7 +91,7 @@ justify-content: space-between;
 
 `
 export const MegaRow = styled.div`
-    line-height: 45px;
+    line-height: 4.5rem;
 `
 export const MegaHeader = styled.span`
     color: #ffff;
@@ -100,8 +100,7 @@ export const MegaHeader = styled.span`
 `
 export const MegaMenu = styled.ul`
 list-style: none;
-padding-left: 15px;
-padding: 15px;
+padding: 1.5rem;
 
 `
 export const MegaMenuListItem = styled.li`
@@ -109,7 +108,7 @@ padding: 0 20px;
 color: #ffff;
 font-size: 1.6rem;
 font-weight: normal;
-border-left: 1px solid ${lightTheme.overlay};
+border-left: .1rem solid ${lightTheme.overlay};
 :hover{
     border-left: 1px solid transparent;
     border-radius: 5px;
@@ -121,13 +120,13 @@ export const MegaMenuItemLink = styled.a``
 
 
 export const NavMenuItem = styled.li`
-padding: 10px;
+padding: 1rem;
 cursor: pointer;
 color: inherit;
-border-bottom: 8px solid transparent;
+border-bottom: .8rem solid transparent;
 :hover{
    color:#595ab4;
-   border-bottom: 8px solid red;
+   border-bottom: .8rem solid red;
 }
 &:hover  ${DropMenu}{
     top: 10vh;
@@ -149,7 +148,7 @@ color: ${lightTheme.bg};
 export const IconCont = styled.div`
 display: flex;
 align-items: center;
-gap: 10px;
+gap: .1rem;
 `
 export const ProductIcon = styled(IoIosSchool)`
 ${iconProps}
