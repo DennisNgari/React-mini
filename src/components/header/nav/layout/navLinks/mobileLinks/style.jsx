@@ -28,6 +28,7 @@ width: 100%;
 height: 100%;
 cursor: pointer;
 font-weight: bold;
+font-size: 1.8rem;
 :hover{
     color: #0026ff;
 }
@@ -52,6 +53,7 @@ export const DropDownLabel = styled.span`
 color:inherit;
 width: 100%;
 font-weight: bold;
+font-size: 1.8rem;
 :hover{
     color: #0026ff;
 }
@@ -61,6 +63,7 @@ export const ArrowContainer = styled.div`
 svg {
     width: 100%;
     height: 100%;
+    font-size: 1.6rem;
     color: ${({ isOpen }) => (!isOpen ? "inherit" : lightTheme.primary)};
         transform: ${({ isOpen }) => (!isOpen ? "none" : "rotate(180deg)")};
         transition:  .3s ease;

@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { b } from "../../../../../../../styles/Responsive";
 import { lightTheme } from "../../../../../../../styles/Theme";
 
 export const DropdownContainer = styled.div`
@@ -7,15 +6,15 @@ background: ${lightTheme.bg};
 white-space: nowrap;
 padding: 10px;
 border-radius: 10px;
-@media ${b.md} {
- font-size: 14px;
- font-weight: lighter;
-        min-width: 100%;
-    }
+min-width: 100%;
 `
 
 export const TreeItemCont = styled.div`
 text-align: left;
+font-size: 12px;
+font-weight: lighter;
+color: ${lightTheme.text2};
+font-size: 0.7rem;
 padding: 0 10px;
 `
 
