@@ -1,17 +1,17 @@
 import styled from "styled-components";
 import { lightTheme } from "../../styles/Theme";
 import loginSVG from "../../assets/img/login.svg"
-import { b } from "../../styles/Responsive";
+import { b, } from "../../styles/Responsive";
 import {BiHide} from "react-icons/bi"
 import {BiShow} from "react-icons/bi"
 import {FcGoogle} from "react-icons/fc"
 
 export const Show = styled(BiShow)`
-font-size: 20px;
+font-size: 2rem;
 ${lightTheme.primaryLinear}
 `
 export const Hide = styled(BiHide)`
-font-size: 20px;
+font-size: 2rem;
 ${lightTheme.primaryLinear}
 `
 export const PasswordShowHideCont = styled.div`
@@ -78,6 +78,7 @@ export const TextBox = styled.div`
 export const LoginText = styled.h2`
 color: ${lightTheme.primary};
 margin-top: 20px;
+font-size:2.4rem ;
 `
 export const LoginOptionCont  = styled.div`
 border: 2px solid ${lightTheme.overlay};
@@ -95,11 +96,12 @@ cursor: pointer;
 }
 `
 export const GoogleIcon = styled(FcGoogle)`
-font-size: 30px;
+font-size: 3rem;
 `
 export const AccessText = styled.h4`
 color: ${lightTheme.primary2};
 align-items: center;
+font-size: 1.3rem;
 `
 
 
@@ -119,7 +121,7 @@ export const ContentRight = styled.div`
 
 export const Form = styled.form`
 & > * {
-    margin-top: 30px;
+    margin-top: 20px;
 }
 :last-child{
         margin-bottom: 20px;
@@ -156,6 +158,7 @@ export const LoginLabel = styled.label`
 export const LoginLabelName = styled.span`
     position: absolute;
     bottom: 5px;
+    font-size: 1.6rem;
     left: 0px;
     transition: all .3s ease;
 `
@@ -166,18 +169,19 @@ export const LoginInput= styled.input`
     border: none;
     padding-top: 20px ;
     outline: none;
-    font-size: 20px; 
+    font-size: 1.3rem;
     background-color: inherit;
     :focus + ${LoginLabel} ${LoginLabelName},
     :valid + ${LoginLabel} ${LoginLabelName}{
     transform: translateY(-110%);
-    font-size: 14px;
+    font-size: 1.4rem;
     color: ${lightTheme.hover};
     };
 `;
 
 export const ForgotPassContainer = styled.div`
  margin: 20px 0px 20px 0;
+ font-size: 1.3rem;
 `
 export const ForgotLabel  = styled.span`
 color: ${lightTheme.SignInBtnBox};

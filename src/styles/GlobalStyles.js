@@ -1,8 +1,9 @@
 import { createGlobalStyle } from "styled-components";
+import { b } from "./Responsive";
 import { lightTheme } from "./Theme";
 
+// @import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300;500&display=swap');
 export const GlobalStyles = createGlobalStyle`
-@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300;500&display=swap');
 
     *,
     *::after,
@@ -26,10 +27,21 @@ export const GlobalStyles = createGlobalStyle`
         border-radius: 10px;
         }
         }; 
-    
+    html{
+        //This defines what 1 rem is
+       font-size: 62.5%;
 
-    nav{
-    font-family: 'Exo 2', sans-serif;
-  }
+        @media ${b.sm}{
+            font-size: 50%;
+        }
 
+        @media ${b.lg}{
+            font-size:56.25% ;
+        }
+        
+        @media ${b.xl}{
+            font-size:75% ;
+        } 
+        
+    }
 `;

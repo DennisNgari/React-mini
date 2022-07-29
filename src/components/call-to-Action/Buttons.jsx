@@ -17,7 +17,8 @@ const accessBtns = css`
 width: 100%;
 display: inline-block;
 padding: 10px;
-font-weight: 700;
+font-size: 1.6rem;
+font-weight: bold;
 border-radius: 5px;
 border: 2px solid ${lightTheme.bg2};
 -webkit-transition: all 0.3s;

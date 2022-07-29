@@ -1,44 +1,39 @@
-/* 
-Media Query Manager
-Responsive Design
+/*
+MEDIA QUERRY MANAGER
+0-600px: phone
+600-900px: Tablet portarait
+900-1200px: Tablet landscape
+1200-1800px: is where our normal styles apply.
+1800px-+: Big deskktops
 
-0 - 600px: mobile-small
-600 - 768px: mobile-medium
-768px - 1024: large/tablet
-944px - 1024px: laptop-small
-1024 - 1200px: laptop
-1200 -1440px: laptop-large/Desktop
+ Breakpoint argument choices 
+ -phone
+ -tablet
+ -laptop
+ -desktop
 
-$breakpoint argument choices
-- mobile-small (sm)
-- mobile-medium (md)
-- mobile-large/tablet (lg)
-- laptop (xl)
-- laptop-large/Desktop (xxl) 
-*/
+ Note that 1 em = 16px
+ We use ems instead of rems because rems are affectd by the width of the browser.
+ */
 
 // Device Sizes.
 export const s = {
-  // 1460px = 91.25em
-  xxl: "91.25em",
+  // Big-Desktop obove 1800px (112.5em)
+  xl: "112.5em",
 
-  // 1200px = 75em
-  xl: "75em",
-  // 1024px = 64em
+  // Laptops up to 1200px (75em)
+  lg: "75em",
 
-  lg: "64em",
-  // 768px = 48em
+  //Tablet up to 900px (48em)
+  md: "56.25em",
 
-  md: "48em",
-  // 600px = 37.5em
-
+  // Mobile Phone up to 600px (37.5em)
   sm: "37.5em",
 };
 
 // BREAKPOINTS
 export const b = {
-  xxl: `(max-width: ${s.xxl})`,
-  xl: `(max-width: ${s.xl})`,
+  xl: `(min-width: ${s.xl})`,
   lg: `(max-width: ${s.lg})`,
   md: `(max-width: ${s.md})`,
   sm: `(max-width: ${s.sm})`,

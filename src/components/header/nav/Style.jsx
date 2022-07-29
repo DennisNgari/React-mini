@@ -15,7 +15,7 @@ const iconProps = css`
   @media ${b.lg}{
     display: block;
     cursor:pointer;
-    font-size: 30px;
+    font-size: 3rem;
     justify-content: space-between;
     right:10px;
 };

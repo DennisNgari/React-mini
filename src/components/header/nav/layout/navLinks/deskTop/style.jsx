@@ -18,12 +18,12 @@ height: 100%;
 export const NavMenuList = styled.ul`
 list-style: none;
 color: ${lightTheme.primary2};
-font-size: 20px;
+font-size: 2rem;
 display: flex;
 align-items: center;
 justify-content:space-around;
 width: 100%; 
-font-weight: bold;
+font-weight: lighter;
 `
 
 export const DropMenu = styled.ul`
@@ -47,7 +47,7 @@ transition: all .5s ease;
 export const DropMenuItem = styled.li`
 list-style: none;
 color:${lightTheme.bg2};
-font-size: 17px;
+font-size: 1.7rem;
 width: 100%;
 :not(:last-child){
     border-bottom: 1px solid gray;
@@ -95,7 +95,7 @@ export const MegaRow = styled.div`
 `
 export const MegaHeader = styled.span`
     color: #ffff;
-    font-size: 20px;
+    font-size: 1.8rem;
     font-weight: bold;
 `
 export const MegaMenu = styled.ul`
@@ -107,9 +107,13 @@ padding: 15px;
 export const MegaMenuListItem = styled.li`
 padding: 0 20px;
 color: #ffff;
+font-size: 1.6rem;
 font-weight: normal;
 border-left: 1px solid ${lightTheme.overlay};
 :hover{
+    border-left: 1px solid transparent;
+    border-radius: 5px;
+    background: #390f7c;
     text-decoration: underline;
 }
 `
@@ -139,7 +143,7 @@ border-bottom: 8px solid transparent;
 
 // Icons
 export const iconProps = css`
-font-size: 30px;
+font-size: 2rem;
 color: ${lightTheme.bg};
 `
 export const IconCont = styled.div`
