@@ -6,7 +6,7 @@ import { b } from "../../styles/Responsive";
 
 
 export const RegisterContainer = styled.div`
-min-height: 90vh;
+min-height: 100vh;
 width: 100%;
 display: flex;
 align-items: center; 
@@ -17,10 +17,6 @@ background-image: linear-gradient(to right,
        url(${loginSVG});
 background-size: cover;
 background-position:center;
-@media ${b.md}{
-       height: auto;
-       overflow: hidden;
-}
 `
 
 export const Form = styled.form`
