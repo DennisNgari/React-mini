@@ -6,7 +6,7 @@ import { b } from "../../styles/Responsive";
 
 
 export const RegisterContainer = styled.div`
-height: 90vh;
+min-height: 90vh;
 width: 100%;
 display: flex;
 align-items: center; 
@@ -25,38 +25,39 @@ background-position:center;
 
 export const Form = styled.form`
 background: ${lightTheme.bg2};
-padding: 0px 50px;
-border-radius: 10px;
+padding: 0rem 5rem;
+border-radius: 1rem;
 @media ${b.md}{
-    padding: 0 80px;
+    padding: 0 8rem;
 }
 `
 export const SignUpText = styled.h2`
 color: ${lightTheme.hover};
 text-align: center;
-margin-top: 20px;
+margin-top: 2rem;
+font-size: 1.8rem;
 `
 
 export const SocialCont = styled.div`
     display: flex;
     align-items: center; 
     justify-content: center;  
-    margin: 10px 0;
+    margin: 1rem 0rem;
 `
 export const OrCont = styled.div`
-margin: 20px 0;
+margin: 2rem 0rem;
 display: flex;
 align-items: center;
 justify-content: center;
-gap: 10px;
+gap: 1rem;
 `
 export const Hr = styled.hr`
 width: 100%;
-height: 1px;
+height: .1rem;
 border: 0;
-border-top: 1px solid #ccc;
+border-top: .1rem solid #ccc;
 `
 export const OrText = styled.span`
-font-size: 14px;
+font-size: 1.3rem;
 color: #555353;
 `

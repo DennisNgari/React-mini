@@ -31,7 +31,7 @@ const Register = () => {
         type:"text",
         placeholder:"FullName",
         errorMessage:"* Name should be between 3-16 characters and shouldn't contain any special character!",
-        label:"fullName",
+        label:"FullName",
         pattern:"^[a-zA-Z]{4,}(?: [a-zA-Z]+)?(?: [a-zA-Z]+)?$",
         required:true,
         
@@ -52,7 +52,7 @@ const Register = () => {
         type:"email",
         placeholder:"Email",
         errorMessage:"* Email should be a valid email address!",
-        label:"email",
+        label:"Email",
         required:true,
     },
     {

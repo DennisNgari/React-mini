@@ -16,13 +16,13 @@ position: relative;
 }
 `
 export const FormLabel = styled.label`
-font-size: 12px;
+font-size: 1.3rem;
 color: ${lightTheme.text};
 `
 
 export const ErrorText = styled.span`
-font-size: 12px;
-padding: 3px;
+font-size: 1.2rem;
+padding: .3rem;
 color: red;
 display: none;
 
@@ -30,15 +30,15 @@ display: none;
 
 export const Checked = styled(BsFillPatchCheckFill)`
 position: absolute;
-right: -20px;
-bottom: 25px;
+right: -2rem;
+bottom: 2.5rem;
 color: green;
 transition: all .3s ease;
 display: none;
 `
 export const RegisterInput = styled.input`
-padding: 15px;
-margin: 10px 0;
+padding: 1.5rem;
+margin: 1rem 0rem;
 border-radius: 5px;
 border: 1px solid ${lightTheme.overlay};
 :invalid[list="true"] ~ ${ErrorText}{
@@ -53,6 +53,6 @@ border: 1px solid ${lightTheme.overlay};
 :focus{
     outline: none;
     border:1px solid ${lightTheme.primary2};
-    box-shadow: 0 0 5px ${lightTheme.primary2};
+    box-shadow: 0 0 .5rem ${lightTheme.primary2};
 }
 `

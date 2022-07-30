@@ -65,6 +65,7 @@ width: 100%;
 export const NavMenuItemLink = styled.a`
 width:100%;
 height: 100%;
+
 `
 // Mega Menu
 export const MegaBox = styled.div`
@@ -100,7 +101,7 @@ export const MegaHeader = styled.span`
 `
 export const MegaMenu = styled.ul`
 list-style: none;
-padding: 1.5rem;
+padding: 1rem;
 
 `
 export const MegaMenuListItem = styled.li`
@@ -125,8 +126,8 @@ cursor: pointer;
 color: inherit;
 border-bottom: .8rem solid transparent;
 :hover{
-   color:#595ab4;
-   border-bottom: .8rem solid red;
+    border-bottom: .8rem solid red;
+   color:#1b1dbd;
 }
 &:hover  ${DropMenu}{
     top: 10vh;
