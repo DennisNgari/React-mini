@@ -6,7 +6,9 @@ import { b } from "../../styles/Responsive";
 
 
 export const RegisterContainer = styled.div`
-min-height: 100vh;
+& > {
+    height: 100%;
+}
 width: 100%;
 display: flex;
 align-items: center; 
@@ -17,11 +19,13 @@ background-image: linear-gradient(to right,
        url(${loginSVG});
 background-size: cover;
 background-position:center;
+background-attachment: fixed;
 `
 
 export const Form = styled.form`
 background: ${lightTheme.bg2};
 padding: 0rem 5rem;
+margin: 5rem auto;
 border-radius: 1rem;
 @media ${b.md}{
     padding: 0 8rem;

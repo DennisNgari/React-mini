@@ -1,5 +1,5 @@
 import {useState} from 'react'
-import { Checked, ErrorText, FormInputWrapper, FormLabel, RegisterInput } from './style'
+import { Checked, ErrorText, FormInputWrapper, FormLabel, RegisterInput, Required } from './style'
 
 const FormInput = (props) => {
     // When the user clicks outside the input, validate  their entries.
@@ -21,6 +21,7 @@ const FormInput = (props) => {
             list= {list.toString()}
             onFocus = {()=> inputProps.name === "confirmPassword" && setList(true)}
             />
+            <Required/>
             <Checked/>
             <ErrorText>{errorMessage}</ErrorText>
         </FormInputWrapper>

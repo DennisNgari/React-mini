@@ -44,7 +44,6 @@ const Register = () => {
         errorMessage:"* Date CAN NOT be empty!",
         placeholder:"Birth-Day",
         label:"BirthDay",
-        required:true,
     },
     {
         id:3,
