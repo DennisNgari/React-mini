@@ -5,7 +5,6 @@ import {FcServices} from "react-icons/fc"
 import {AiOutlineBarChart} from "react-icons/ai"
 import {GiPriceTag} from "react-icons/gi"
 import {GoLaw} from "react-icons/go"
-import { b } from "../../../../../../styles/Responsive";
 
 
 export const NavMenu = styled.nav`
