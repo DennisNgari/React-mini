@@ -12,6 +12,7 @@ export const GlobalStyles = createGlobalStyle`
         margin: 0;
         padding: 0;
     }
+
     body {
         background:linear-gradient(0.25turn, ${lightTheme.bg}, ${lightTheme.bg2}) ;
         font-family: 'Roboto', sans-serif;
@@ -29,19 +30,23 @@ export const GlobalStyles = createGlobalStyle`
         }; 
     html{
         //This defines what 1 rem is
-       font-size: 62.5%;
 
-        @media ${b.sm}{
-            font-size: 50%;
-        }
-
-        @media ${b.lg}{
-            font-size:56.25% ;
-        }
-        
-        @media ${b.xl}{
-            font-size:75% ;
+     @media ${b.xxl}{
+            font-size:75%;
         } 
-        
+
+    @media ${b.xl}{
+        font-size: 62.5%;
     }
+
+    @media ${b.lg}{
+        font-size:56.25% ;
+    }
+
+    @media ${b.sm}{
+        font-size: 50%;  
+    }
+    
+    }
+    
 `;

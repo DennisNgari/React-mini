@@ -27,9 +27,6 @@ background: ${lightTheme.bg2};
 padding: 0rem 5rem;
 margin: 5rem auto;
 border-radius: 1rem;
-@media ${b.md}{
-    padding: 0 8rem;
-}
 `
 export const SignUpText = styled.h2`
 color: ${lightTheme.hover};

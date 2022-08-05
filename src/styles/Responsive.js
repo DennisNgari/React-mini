@@ -18,8 +18,11 @@ MEDIA QUERRY MANAGER
 
 // Device Sizes.
 export const s = {
-  // Big-Desktop obove 1800px (112.5em)
-  xl: "112.5em",
+  // Big-Desktop obove 1920px (> 120em)
+  xxl: "120em",
+
+  // Desktop/big laptops up to 1920px (< 120em)
+  xl: "120em",
 
   // Laptops up to 1200px (75em)
   lg: "75em",
@@ -29,11 +32,15 @@ export const s = {
 
   // Mobile Phone up to 600px (37.5em)
   sm: "37.5em",
+
+  // Mobile Phone below 600px (< 37.5em)
+  xsm: "37.5em",
 };
 
 // BREAKPOINTS
 export const b = {
-  xl: `(min-width: ${s.xl})`,
+  xxl: `(min-width: ${s.xxl})`,
+  xl: `(max-width: ${s.xl})`,
   lg: `(max-width: ${s.lg})`,
   md: `(max-width: ${s.md})`,
   sm: `(max-width: ${s.sm})`,
