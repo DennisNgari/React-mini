@@ -5,6 +5,7 @@ import {FcServices} from "react-icons/fc"
 import {AiOutlineBarChart} from "react-icons/ai"
 import {GiPriceTag} from "react-icons/gi"
 import {GoLaw} from "react-icons/go"
+import { b } from "../../../../../../styles/Responsive";
 
 
 export const NavMenu = styled.nav`
@@ -13,6 +14,7 @@ align-items: center;
 justify-content:center;
 width: 100%; 
 height: 100%;
+/* position: relative; */
 `
 
 export const NavMenuList = styled.ul`
@@ -24,6 +26,7 @@ align-items: center;
 justify-content:space-around;
 width: 100%; 
 font-weight: lighter;
+
 `
 
 export const DropMenu = styled.ul`
@@ -54,8 +57,9 @@ width: 100%;
 }
  
 :hover{
-    color:#ffff;
-    text-decoration: underline;
+    border-radius: 5px;
+    background: #390f7c;
+    color: #4ac719;
 }
 `
 export const DropMenuItemLink = styled.a`
@@ -65,7 +69,8 @@ width: 100%;
 export const NavMenuItemLink = styled.a`
 width:100%;
 height: 100%;
-
+text-decoration: none;
+color: inherit;
 `
 // Mega Menu
 export const MegaBox = styled.div`
@@ -78,7 +83,6 @@ left: 0;
 top: 12vh;
 visibility: hidden;
 transition: all .3s ease; 
-
 `
 
 
@@ -114,7 +118,7 @@ border-left: .1rem solid ${lightTheme.overlay};
     border-left: 1px solid transparent;
     border-radius: 5px;
     background: #390f7c;
-    text-decoration: underline;
+    color: #4ac719;
 }
 `
 export const MegaMenuItemLink = styled.a``
@@ -124,12 +128,19 @@ export const NavMenuItem = styled.li`
 padding: 1rem;
 cursor: pointer;
 color: inherit;
-border-bottom: .8rem solid transparent;
-:hover{
-    border-bottom: .8rem solid red;
-   color:#1b1dbd;
+&:hover{
+    color:#1b1dbd;
 }
-&:hover  ${DropMenu}{
+&:hover:before{
+        content: "";
+        position: absolute;
+        top: 8vh; 
+        width: 3rem;
+        height: .5rem;
+        background: red;
+}
+
+&:hover ${DropMenu}{
     top: 10vh;
     opacity: 1;
     visibility: visible;
@@ -149,7 +160,7 @@ color: ${lightTheme.bg};
 export const IconCont = styled.div`
 display: flex;
 align-items: center;
-gap: .1rem;
+gap: 1rem;
 `
 export const ProductIcon = styled(IoIosSchool)`
 ${iconProps}

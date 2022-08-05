@@ -53,6 +53,18 @@ padding: 1.5rem;
 margin: 1rem 0rem;
 border-radius: 5px;
 border: 1px solid ${lightTheme.overlay};
+&[type="date"]::-webkit-calendar-picker-indicator {
+    background: transparent;
+    bottom: 0;
+    color: transparent;
+    cursor: pointer;
+    height: auto;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: auto;
+}
 :invalid[list="true"] ~ ${ErrorText}{
     display: block;
 }
@@ -63,10 +75,7 @@ border: 1px solid ${lightTheme.overlay};
     opacity: 1;
 }
 :valid[list="true"] ~ ${Checked}{
-    display: ${props=>(props.name === "birthDay")? "none":"block"};
-}
-:valid{
-    display: ${props=>(props.name === "birthDay")? "block":"block"};
+    display:block;
 }
 :focus{
     outline: none;
