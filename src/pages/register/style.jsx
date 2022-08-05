@@ -24,11 +24,11 @@ background-attachment: fixed;
 
 export const Form = styled.form`
 background: ${lightTheme.bg2};
-padding: 0rem 5rem;
+padding: 0rem 8rem;
 margin: 5rem auto;
 border-radius: 1rem;
-@media ${b.md}{
-    padding: 0 8rem;
+@media ${b.sm}{
+    padding: 0 5rem;
 }
 `
 export const SignUpText = styled.h2`

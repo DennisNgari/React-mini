@@ -17,13 +17,14 @@ const iconProps = css`
     cursor:pointer;
     font-size: 3rem;
     justify-content: space-between;
-    right:1rem;
+    right:1.5rem;
 };
 `
 
 // Open Menu Icon
 export const MenuIcon = styled(FaBars)`
 ${iconProps}
+margin-right: 1.5rem;
 `;
 
 // Close Menu Icon
@@ -48,11 +49,13 @@ export const Wrapper = styled.nav`
     margin: auto;
     align-items: center;
     justify-content: center;
+    position: relative;
     @media ${b.lg}{
     display: flex;
     padding: 1rem;
     max-width: 100%;
     justify-content: space-between;
+    
 };
 `;
 
