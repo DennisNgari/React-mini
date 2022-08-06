@@ -1,5 +1,5 @@
-import {DropMenuItem,DropMenu, NavMenu, NavMenuItem,NavMenuItemLink,NavMenuList, MegaBox, MegaContent, MegaRow, MegaHeader, MegaMenu, MegaMenuListItem, MegaMenuItemLink, ProductIcon, ServiceIcon, IconCont, FinanceIcon, PriceIcon, LegalIcon} from "./style"
-import { Products, Services, Finance, Legal, Pricing } from "../navLinkData"
+import {DropMenuItem,DropMenu, NavMenu, NavMenuItem,NavMenuItemLink,NavMenuList, MegaBox, MegaContent, MegaRow, MegaHeader, MegaMenu, MegaMenuListItem, MegaMenuItemLink, ProductIcon, ServiceIcon, IconCont, FinanceIcon, PriceIcon} from "./style"
+import { Products, Services, Finance, Pricing } from "../navLinkData"
 
 const DeskTopLinks = () => {
 
