@@ -126,6 +126,7 @@ export const Form = styled.form`
 :last-child{
         margin-bottom: 20px;
     }
+    min-width: 50%;
 `
 export const LoginForm = styled.div`
     display: flex;

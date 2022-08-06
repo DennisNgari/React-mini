@@ -22,7 +22,9 @@ color: ${lightTheme.primary2};
 font-size: 2rem;
 display: flex;
 align-items: center;
-justify-content:space-around;
+/* justify-content:space-around; */
+justify-content:flex-end;
+gap: 1rem;
 width: 100%; 
 font-weight: lighter;
 
