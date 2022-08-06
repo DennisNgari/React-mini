@@ -32,7 +32,7 @@ export const GlobalStyles = createGlobalStyle`
         //This defines what 1 rem is
 
      @media ${b.xxl}{
-            font-size:75%;
+            font-size:70%;
         } 
 
     @media ${b.xl}{

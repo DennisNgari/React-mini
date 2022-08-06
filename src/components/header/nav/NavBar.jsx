@@ -43,7 +43,7 @@ const user = false;
 
                 {/* Right Section */}
                 <Right>
-                {user ? (<NavLink to="/login"><SignInBtn>Log Out</SignInBtn></NavLink>):(<><NavLink to="/login"><SignInBtn>Sign In</SignInBtn></NavLink><NavLink to="/register"><SignUpBtn>Sign Up</SignUpBtn></NavLink></>)}
+                {user ? (<NavLink to="/login"><SignInBtn name="nav">Log Out</SignInBtn></NavLink>):(<><NavLink to="/login"><SignInBtn name="nav">Sign In</SignInBtn></NavLink><NavLink to="/register"><SignUpBtn name="nav">Sign Up</SignUpBtn></NavLink></>)}
                 </Right>
 
                 {/* Mobile View Hamburger */}

@@ -80,7 +80,7 @@ const DeskTopLinks = () => {
                             </MegaRow>
 
                                {/* Row 3 */}
-                               <MegaRow>
+                               {/* <MegaRow>
                                <IconCont><LegalIcon/><MegaHeader>Legal</MegaHeader></IconCont>
 
                                 <MegaMenu>
@@ -90,7 +90,7 @@ const DeskTopLinks = () => {
                                     </MegaMenuListItem>
                                     ))}
                                 </MegaMenu>
-                            </MegaRow>
+                            </MegaRow> */}
 
                              {/* Row 3 */}
                              <MegaRow>

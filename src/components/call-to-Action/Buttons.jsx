@@ -16,13 +16,13 @@ const btnReset = css`
 const accessBtns = css`
 width: 100%;
 display: inline-block;
-padding: .8rem .5rem;
-font-size: 1.6rem;
+padding: .8rem .2rem;
 font-weight: bold;
 border-radius: .5rem;
 border: 2px solid ${lightTheme.bg2};
 -webkit-transition: all 0.3s;
 -moz-transition: all 0.3s;
+font-size: ${props => (props.name === "nav")? "1.2rem" : "1.6rem" };
 transition: all 0.3s;
 `;
 
@@ -45,6 +45,7 @@ ${btnReset};
 ${accessBtns};
 background: ${lightTheme.hover};
 color: ${lightTheme.bg2};
+align-self: center;
 :hover{
     background: ${lightTheme.primary};
     color: ${lightTheme.bg2};

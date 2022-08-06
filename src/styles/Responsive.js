@@ -32,9 +32,6 @@ export const s = {
 
   // Mobile Phone up to 600px (37.5em)
   sm: "37.5em",
-
-  // Mobile Phone below 600px (< 37.5em)
-  xsm: "37.5em",
 };
 
 // BREAKPOINTS
