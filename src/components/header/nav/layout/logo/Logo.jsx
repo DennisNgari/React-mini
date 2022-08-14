@@ -1,5 +1,5 @@
 import { LogoContainer, LogoImage } from "./style"
-import logo from "../../../../../assets/img/expertprofessor.jpeg"
+import logo from "../../../../../assets/img/expertprofessor.png"
 
 const Logo = () => {
     return (
